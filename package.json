@@ -1,0 +1,28 @@
+{
+  "name": "facilio-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Nandhini_R123@bitbucket.org/facilio/facilio-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/facilio/facilio-tests/issues"
+  },
+  "homepage": "https://bitbucket.org/facilio/facilio-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.31.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1384.0",
+    "axios": "^1.4.0",
+    "playwright": "^1.37.1"
+  }
+}
