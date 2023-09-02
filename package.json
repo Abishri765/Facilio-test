@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test"
+     "test": "playwright test tests", 
+     "build": "mkdir -p build/dist && cp -r tests workflows build/dist/"
   },
   "repository": {
     "type": "git",
