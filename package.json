@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
      "test": "playwright test tests", 
-     "build": "mkdir -p build/dist && cp -r tests workflows build/dist/"
+     "build": "mkdir -p build/dist && cp -r tests workflows build/dist/",
+     "cli": "./playwright-cli.js"
   },
   "repository": {
     "type": "git",
