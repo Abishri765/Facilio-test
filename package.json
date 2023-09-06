@@ -4,9 +4,10 @@
   "description": "",
   "main": "playwright-cli.js",
   "scripts": {
-     "test": "playwright test tests", 
-     "build": "mkdir -p build/dist && cp -r tests workflows facilio.config.js build/dist/",
-     "cli": "./playwright-cli.js"
+    "test": "playwright test tests",
+    "build": "ncc build playwright-cli.js -o build",
+    "package": "pkg . -t linux --output dist/facilio-tests",
+    "cli": "./playwright-cli.js"
   },
   "repository": {
     "type": "git",
@@ -23,11 +24,12 @@
   },
   "homepage": "https://bitbucket.org/facilio/facilio-tests#readme",
   "devDependencies": {
-    "@playwright/test": "^1.31.1"
+    "@playwright/test": "^1.31.1",
+    "@vercel/ncc": "^0.36.1"
   },
   "dependencies": {
     "aws-sdk": "^2.1384.0",
-    "axios": "^1.4.0",
+    "axios": "^1.5.0",
     "playwright": "^1.37.1"
   },
   "pkg": {
